@@ -1,0 +1,98 @@
+📘 README
+🧠 Study Task Manager (Java Mini Project)
+📌 Latar Belakang Masalah
+
+Sebagai seorang mahasiswa, sering kali kita menerima banyak informasi tugas dari berbagai mata kuliah. Dalam satu waktu, bisa terdapat:
+
+Banyak tugas dari berbagai mata kuliah
+Lebih dari satu tugas dalam satu mata kuliah
+Deadline yang berbeda-beda
+
+Hal ini sering menimbulkan kebingungan seperti:
+
+“Tugas mana yang harus dikerjakan dulu?”
+“Apa saja tugas yang belum saya kerjakan?”
+“Deadline tugas ini kapan?”
+
+Karena tidak adanya sistem pengelolaan yang baik, mahasiswa dapat lupa tugas atau salah dalam menentukan prioritas.
+
+💡 Solusi
+
+Untuk mengatasi masalah tersebut, dibuatlah program Study Task Manager, yaitu sebuah aplikasi sederhana berbasis Java yang membantu mahasiswa:
+
+Mencatat semua tugas secara terstruktur
+Menyimpan detail tugas (mata kuliah, judul tugas, deadline)
+Menentukan prioritas secara otomatis berdasarkan deadline
+🎯 Tujuan Program
+Membantu mahasiswa mengelola tugas kuliah
+Menentukan prioritas tugas secara otomatis
+Melatih penerapan konsep Object-Oriented Programming (OOP)
+Menggunakan struktur data dinamis dalam Java
+🧩 Fitur Program
+Tambah Tugas
+Input mata kuliah
+Input judul tugas (contoh: praktikum, project, ringkasan)
+Input deadline
+Lihat Daftar Tugas
+Menampilkan semua tugas
+Diurutkan otomatis berdasarkan deadline terdekat
+Prioritas Otomatis
+Tidak perlu input prioritas manual
+Sistem menentukan prioritas dari deadline
+Multi Tugas per Mata Kuliah
+Satu mata kuliah bisa memiliki banyak tugas berbeda
+🛠️ Teknologi yang Digunakan
+Bahasa: Java
+Konsep:
+Object-Oriented Programming (OOP)
+ArrayList
+Sorting (Comparator)
+Date API (LocalDate)
+🧱 Struktur Program
+1. Task
+
+Menyimpan data:
+
+Mata kuliah
+Judul tugas
+Deadline
+2. TaskManager
+
+Mengelola:
+
+Menambah tugas ke dalam list
+Menampilkan daftar tugas
+Mengurutkan berdasarkan deadline (prioritas)
+3. Main
+Menyediakan menu interaktif
+Mengatur alur input dan output
+▶️ Cara Menjalankan Program
+1. Compile:
+javac Main.java Task.java TaskManager.java
+2. Jalankan:
+java Main
+🧪 Contoh Penggunaan
+Input:
+1
+Basis Data
+Project ERD
+2026-04-10
+Input berikutnya:
+1
+Pemrograman Visual
+Praktikum Week 5
+2026-04-07
+Output:
+=== DAFTAR TUGAS (PRIORITAS BERDASARKAN DEADLINE) ===
+1. Pemrograman Visual | Praktikum Week 5 | Deadline: 2026-04-07
+2. Basis Data | Project ERD | Deadline: 2026-04-10
+⚙️ Cara Kerja Program
+Data tugas disimpan dalam ArrayList
+Setiap tugas memiliki atribut:
+Mata kuliah
+Judul tugas
+Deadline
+Saat ditampilkan:
+Data akan diurutkan menggunakan Comparator
+Berdasarkan deadline terdekat
+Tugas dengan deadline paling dekat akan muncul di urutan pertama
