@@ -23,11 +23,13 @@ Untuk mengatasi masalah tersebut, dibuatlah program Study Task Manager, yaitu se
 Mencatat semua tugas secara terstruktur
 Menyimpan detail tugas (mata kuliah, judul tugas, deadline)
 Menentukan prioritas secara otomatis berdasarkan deadline
+
 🎯 Tujuan Program
 Membantu mahasiswa mengelola tugas kuliah
 Menentukan prioritas tugas secara otomatis
 Melatih penerapan konsep Object-Oriented Programming (OOP)
 Menggunakan struktur data dinamis dalam Java
+
 🧩 Fitur Program
 Tambah Tugas
 Input mata kuliah
@@ -41,6 +43,18 @@ Tidak perlu input prioritas manual
 Sistem menentukan prioritas dari deadline
 Multi Tugas per Mata Kuliah
 Satu mata kuliah bisa memiliki banyak tugas berbeda
+
+⚙️ Cara Kerja Program
+Data tugas disimpan dalam ArrayList
+Setiap tugas memiliki atribut:
+Mata kuliah
+Judul tugas
+Deadline
+Saat ditampilkan:
+Data akan diurutkan menggunakan Comparator
+Berdasarkan deadline terdekat
+Tugas dengan deadline paling dekat akan muncul di urutan pertama
+
 🛠️ Teknologi yang Digunakan
 Bahasa: Java
 Konsep:
@@ -48,6 +62,7 @@ Object-Oriented Programming (OOP)
 ArrayList
 Sorting (Comparator)
 Date API (LocalDate)
+
 🧱 Struktur Program
 1. Task
 
@@ -86,13 +101,3 @@ Output:
 === DAFTAR TUGAS (PRIORITAS BERDASARKAN DEADLINE) ===
 1. Pemrograman Visual | Praktikum Week 5 | Deadline: 2026-04-07
 2. Basis Data | Project ERD | Deadline: 2026-04-10
-⚙️ Cara Kerja Program
-Data tugas disimpan dalam ArrayList
-Setiap tugas memiliki atribut:
-Mata kuliah
-Judul tugas
-Deadline
-Saat ditampilkan:
-Data akan diurutkan menggunakan Comparator
-Berdasarkan deadline terdekat
-Tugas dengan deadline paling dekat akan muncul di urutan pertama
